@@ -4,6 +4,27 @@
     <title>My Address Book</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/judith.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+    document.getElementById("active").onclick = function myName() {
+      }
+    }
+// document.getElementById("active").onclick = function myName()
+
+function myName() {
+    var fname = document.getElementById("fname").value;
+    var mname = document.getElementById("mname").value;
+    var lname = document.getElementById("lname").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var address = document.getElementById("address").value;
+
+    document.getElementById("tname").innerHTML = fname + ' ' + mname + ' ' + lname;
+    document.getElementById("temail").innerHTML = email;
+    document.getElementById("tphone").innerHTML = phone;
+    document.getElementById("taddress").innerHTML = address; 
+}
+    </script>
   </head>
   <body>
     <div class="container">
@@ -31,7 +52,7 @@
                     <input id="email" id="user[email]" class="form-control form-control-lg input-block" placeholder="you@example.com" type="text">
 
                 <input id="address" class="form-control form-control-lg input-block" placeholder="Address" type="text">
-                <button class="btn btn-block" type="submit" onclick="myFunction()">Create New Contact</button>
+                <button class="btn btn-block" type="submit" id="active">Create New Contact</button>
               </form>
             </center>
           </div>
@@ -52,41 +73,40 @@
 
             <tbody>
               <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="btn btn-primary btn-large btn-block" onclick="nameedit()">Edit</button>
+                  <button class="btn btn-primary btn-large btn-block" type="submit" data-ga-click="Create;">Delete Contact</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <button class="btn btn-primary btn-large btn-block" type="submit" data-ga-click="Create;">Edit</button>
+                  <button class="btn btn-primary btn-large btn-block" type="submit" data-ga-click="Create;">Delete Contact</button>
+                </td>
+              </tr>
+
+              <tr>
                 <td id="tname"></td>
                 <td id="tphone"></td>
                 <td id="temail"></td>
                 <td id="taddress"></td>
                 <td>
-                  <button class="btn btn-primary btn-large f4 btn-block" onclick="nameedit()">Edit</button>
-                  <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Create;">Delete Contact</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td id="taddress"></td>
-                <td>
-                  <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Create;">Edit</button>
-                  <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Create;">Delete Contact</button>
-                </td>
-              </tr>
-
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td id="taddress"></td>
-                <td>
-                  <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Create;">Edit</button>
-                  <button class="btn btn-primary btn-large f4 btn-block" type="submit" data-ga-click="Create;">Delete Contact</>
+                  <button class="btn btn-primary btn-large btn-block" type="submit" data-ga-click="Create;">Edit</button>
+                  <button class="btn btn-primary btn-large btn-block" type="submit" data-ga-click="Create;">Delete Contact</>
               </td>
             </tr>                  
           </tbody>
         </table>
       </main>
     </div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
   </body>
 </html>
