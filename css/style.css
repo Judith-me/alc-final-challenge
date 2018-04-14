@@ -123,32 +123,25 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 }
 ::placeholder {
     color: #6a737d;
+} 
+.ContactHead{
+  color: red;
+  /*border-width: 10px;*/
+  /*border-bottom: 1px solid red;*/
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
 }
-.f4 {
-    font-size: 16px !important;
-}
-.f4 {
-    font-size: 16px !important;
-}
-.btn-block {
-    display: block;
-    width: inherit;
-    text-align: center;
-}
-.btn-large {
+
+.btn {
     padding: .75em 1.25em;
     font-size: inherit;
-    border-radius: 6px;
-}
-.btn-primary {
-    color: #fff;
-    background-color: #28a745;
-    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
-}
-.btn {
     color: #24292e;
-    background-color: #eff3f6;
-    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    color: white;
+    background-color: #28a745;
+    /*background-color: #eff3f6;*/
 }
 .btn {
     position: relative;
@@ -168,7 +161,7 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
     background-position: -1px -1px;
     background-size: 110% 110%;
     border: 1px solid rgba(27,31,35,0.2);
-    border-radius: 0.25em;
+    /*border-radius: 0.25em;*/
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -225,9 +218,9 @@ button, input, select, textarea {
     /*border-radius: 3px !important;*/
 }
 .table {
-    width: 70%;
+    width: auto;
     padding: 15px;
-    max-width: 70%;
+    min-width: 80%;
     margin-bottom: 20px;
 }
 table {
@@ -255,13 +248,13 @@ table {
 }
 .table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #333;
 }
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
     padding: 8px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid red;
 }
 th {
     text-align: left;
